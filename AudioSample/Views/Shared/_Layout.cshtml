@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AudioSample</title>
+    <link rel="stylesheet" href="~/css/tem.css" />
+ 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+           
+        </nav>
+    </header>
+    
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - AudioSample - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
